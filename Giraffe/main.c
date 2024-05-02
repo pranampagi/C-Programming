@@ -3,10 +3,9 @@
 
 int main()
 {
-    int age = 40;
-    double gpa = 3.6;
-    char grade = 'A';
-    char phrase[] = "Giraffe Academy";
+    int favNum = 90;
+    char myChar = 'i';
+    printf("My favourite %c is %f", myChar, favNum);
 
     return 0;
 }
