@@ -3,7 +3,9 @@
 
 int main()
 {
-    printf("%f", floor(36.656));
+    /*
+    printf("Comments are fun");
+    */
 
     return 0;
 }
