@@ -3,9 +3,7 @@
 
 int main()
 {
-    int favNum = 90;
-    char myChar = 'i';
-    printf("My favourite %c is %f", myChar, favNum);
+    printf("%f", floor(36.656));
 
     return 0;
 }
