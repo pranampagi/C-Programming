@@ -3,9 +3,8 @@
 
 int main()
 {
-    /*
-    printf("Comments are fun");
-    */
+    const int FAV_NUM = 5;
+    printf("%d", FAV_NUM);
 
     return 0;
 }
