@@ -3,8 +3,10 @@
 
 int main()
 {
-    const int FAV_NUM = 5;
-    printf("%d", FAV_NUM);
+    char name[20];
+    printf("Enter your name: ");
+    fgets(name, 20, stdin);
+    printf("Your name is %s", name);
 
     return 0;
 }
