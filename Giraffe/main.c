@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+double cube(double num);
+
 int main()
 {
-    sayHi("Mike", 40);
-    sayHi("Tom", 23);
-    sayHi("Oscar", 70);
+    printf("Answer: %f", cube(7.0));
 
     return 0;
 }
 
-void sayHi(char name[], int age) {
-    printf("Hello %s, you are %d\n", name, age);
+double cube(double num) {
+    return num * num * num;
 }
