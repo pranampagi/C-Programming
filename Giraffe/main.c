@@ -3,9 +3,13 @@
 
 int main()
 {
-    int luckyNumbers[10];
-    luckyNumbers[1] = 200;
-    printf("%d", luckyNumbers[1]);
+    sayHi("Mike", 40);
+    sayHi("Tom", 23);
+    sayHi("Oscar", 70);
 
     return 0;
+}
+
+void sayHi(char name[], int age) {
+    printf("Hello %s, you are %d\n", name, age);
 }
