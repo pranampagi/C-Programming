@@ -3,14 +3,21 @@
 
 int main()
 {
-    double num1;
-    double num2;
-    printf("Enter first number: ");
-    scanf("%lf", &num1);
-    printf("Enter second number: ");
-    scanf("%lf", &num2);
+    char color[20];
+    char pluralNoun[20];
+    char celebrityF[20];
+    char celebrityL[20];
 
-    printf("Answer: %f", num1 + num2);
+    printf("Enter a color: ");
+    scanf("%s", color);
+    printf("Enter a plural noun: ");
+    scanf("%s", pluralNoun);
+    printf("Enter a celebrity: ");
+    scanf("%s%s", celebrityF, celebrityL);
+
+    printf("Roses are %s\n", color);
+    printf("%s are blue\n", pluralNoun);
+    printf("I love %s %s\n", celebrityF, celebrityL);
 
     return 0;
 }
