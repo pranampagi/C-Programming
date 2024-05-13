@@ -3,27 +3,26 @@
 
 int main()
 {
-    double num1;
-    double num2;
-    char op;
+    char grade = 'C';
 
-    printf("Enter a number: ");
-    scanf("%lf", &num1);
-    printf("Enter operator: ");
-    scanf(" %c", &op);
-    printf("Enter a number: ");
-    scanf("%lf", &num2);
-
-    if (op == '+') {
-        printf("%f", num1 + num2);
-    } else if (op == '-') {
-        printf("%f", num1 - num2);
-    } else if (op == '*') {
-        printf("%f", num1 * num2);
-    } else if (op == '/') {
-        printf("%f", num1 / num2);
-    } else {
-        printf("Invalid Operator");
+    switch (grade) {
+        case 'A' :
+            printf("You did great!");
+            break;
+        case 'B' :
+            printf("You did alright!");
+            break;
+        case 'C' :
+            printf("You did poorly");
+            break;
+        case 'D' :
+            printf("You did very bad");
+            break;
+        case 'F' :
+            printf("You Failed!");
+            break;
+        default :
+            printf("Invalid Grade");
     }
 
     return 0;
