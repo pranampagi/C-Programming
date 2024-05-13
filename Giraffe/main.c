@@ -1,29 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+struct Student {
+    char name[50];
+    char major[50];
+    int age;
+    double gpa;
+};
+
 int main()
 {
-    char grade = 'C';
+    struct Student student1;
+    student1.age = 22;
+    student1.gpa = 3.2;
+    strcpy(student1.name, "Jim");
+    strcpy(student1.major, "Business");
 
-    switch (grade) {
-        case 'A' :
-            printf("You did great!");
-            break;
-        case 'B' :
-            printf("You did alright!");
-            break;
-        case 'C' :
-            printf("You did poorly");
-            break;
-        case 'D' :
-            printf("You did very bad");
-            break;
-        case 'F' :
-            printf("You Failed!");
-            break;
-        default :
-            printf("Invalid Grade");
-    }
+    struct Student student2;
+    student2.age = 20;
+    student2.gpa = 2.5;
+    strcpy(student2.name, "Pam");
+    strcpy(student2.major, "Art");
+
+    printf("%s", student2.name);
 
     return 0;
 }
