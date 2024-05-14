@@ -3,21 +3,27 @@
 
 int main()
 {
-    /**
-    int index = 1;
+    int secretNumber = 5;
+    int guess;
+    int guessCount = 0;
+    int guessLimit = 3;
+    int outOfGuesses = 0;
 
-    while (index <= 5) {
-        printf("%d\n", index);
-        index++;
+    while (guess != secretNumber && outOfGuesses == 0) {
+        if (guessCount < guessLimit) {
+            printf("Enter a number: ");
+            scanf("%d", &guess);
+            guessCount++;
+        } else {
+            outOfGuesses = 1;
+        }
     }
-    */
 
-    int index = 6;
-
-    do {
-        printf("%d\n", index);
-        index++;
-    } while (index <= 5);
+    if (outOfGuesses == 1) {
+        printf("Out of guesses");
+    } else {
+        printf("You Win!");
+    }
 
     return 0;
 }
