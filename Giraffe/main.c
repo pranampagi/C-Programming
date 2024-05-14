@@ -3,17 +3,12 @@
 
 int main()
 {
-    /**
-    FILE * fpointer = fopen("employees.txt", "w");
+    char line[255];
+    FILE * fpointer = fopen("employees.txt", "r");
 
-    fprintf(fpointer, "Jim, Salesman\nPam, Receptionist\nOscar, Accounting");
-
-    fclose(fpointer);
-    */
-
-    FILE * fpointer = fopen("employees.txt", "a");
-
-    fprintf(fpointer, "\nKelly, Customer Service");
+    fgets(line, 255, fpointer);
+    // fgets(line, 255, fpointer);
+    printf("%s", line);
 
     fclose(fpointer);
 
