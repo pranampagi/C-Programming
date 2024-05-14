@@ -3,11 +3,19 @@
 
 int main()
 {
-    int age = 30;
-    int *pAge = &age;
+    /**
+    FILE * fpointer = fopen("employees.txt", "w");
 
-    // printf("%d", *pAge);
-    printf("%d", *&age);
+    fprintf(fpointer, "Jim, Salesman\nPam, Receptionist\nOscar, Accounting");
+
+    fclose(fpointer);
+    */
+
+    FILE * fpointer = fopen("employees.txt", "a");
+
+    fprintf(fpointer, "\nKelly, Customer Service");
+
+    fclose(fpointer);
 
     return 0;
 }
